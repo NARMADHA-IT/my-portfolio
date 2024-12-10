@@ -1,0 +1,708 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+
+
+body {
+  font-family: 'Arial', sans-serif;
+  color: #fff;
+  background-color: #1e1e2f; /* Fallback color in case the image doesn't load */
+  background-image: url('https://i.pinimg.com/736x/77/34/42/7734424a17fddc5fcddcd431d9ecf892.jpg'); /* Replace 'your-image-path.jpg' with your image file path */
+  background-size: cover; /* Ensures the image covers the entire screen */
+  background-position: center; /* Centers the image */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+  line-height: 1.6;
+}
+
+
+
+
+
+
+/* Main Section */
+.main-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+  position: relative; /* Necessary for absolute positioning of the gradient */
+  margin-top: 50px;
+  margin-left: 75px;
+}
+
+@media (max-width: 768px) {
+  .main-section {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .image-section img {
+    width: 80%; /* Adjust image size on smaller screens */
+    margin: 20px 0;
+  }
+
+  .buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+
+
+
+/* Header Styling */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background: linear-gradient(90deg, #34254d, #4d4d6f);
+  max-width: 1050px; /* Limit the width of the header */
+  margin: 0 auto; /* Center the header */
+  margin-top: 15px;
+  border-radius: 10px; /* Optional: Adds rounded edges for better aesthetics */
+}
+.content h1 {
+  font-size: 2rem; /* Adjust as needed */
+  white-space: nowrap; /* Prevent wrapping */
+}
+
+.content {
+  max-width: 80%; /* Adjust the width to ensure text fits */
+}
+
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #fff;
+}
+
+.logo span {
+  color: #2b0e39;
+}
+
+.navbar a {
+  margin: 0 0.8rem;
+  text-decoration: none;
+  color: #9e9b9b;
+}
+
+
+.hire-me-btn {
+  padding: 0.5rem 1rem;
+  
+  background: linear-gradient(90deg, #34254d,#9339cf );
+  color: #fcfcff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.hire-me-btn:hover {
+  background: #3a393a;
+}
+
+/* Main Section */
+.main-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+}
+
+.content {
+  max-width: 50%;
+}
+
+.content p {
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+}
+
+.content h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.experience {
+  margin-bottom: 2rem;
+  font-size: 1.2rem;
+  color: #d1d1d1;
+}
+
+.buttons {
+  margin-bottom: 2rem;
+}
+
+.say-hello-btn,
+.work-demo-btn {
+  padding: 0.5rem 1.5rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 1rem;
+
+}
+
+.say-hello-btn {
+  background: linear-gradient(90deg, #34254d,#9339cf );
+  color: #fff;
+}
+
+.work-demo-btn {
+  background: transparent;
+  color: #8b4ef8;
+  border: 1px solid #8b4ef8;
+  text-decoration: none;
+}
+
+
+
+/* Image Section */
+.image-section img {
+  width: 300px;
+  border-radius: 300px;
+  margin-top: 70px;
+  margin-left: 0px;
+  margin-right: 200px;
+
+}
+
+
+
+
+
+.icon-buttons {
+  display: flex;
+  flex-direction: column; /* Arrange icons vertically */
+  gap: 10px; /* Space between icons */
+
+  position: absolute; /* Allow precise placement */
+  top: 200px; /* Adjust this value to move the icons closer to the image */
+  left: 1100px; /* Adjust as needed to align horizontally */
+}
+
+
+.icon-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  background-color: #2f194a; /* Light grey background */
+  color: black; /* Black icon color */
+  border-radius: 50%; /* Circle shape */
+  text-decoration: none;
+  font-size: 20px; /* Icon size */
+  transition: background-color 0.3s, transform 0.2s;
+  animation: typing 3s linear infinite; /* Loops infinitely */
+  
+}
+
+
+
+.icon-button:hover {
+  background-color: #363333; /* Slightly darker grey on hover */
+  transform: scale(1.1); /* Subtle zoom effect */
+}
+
+.icon-button i {
+  pointer-events: none;
+}
+
+.icon-button img {
+  width: 70%; /* Scales the image to fit */
+  height: 70%; /* Maintains aspect ratio */
+  object-fit: contain; /* Ensures the image fits well */
+  border-radius: 50%; /* Makes the image circular */
+  margin: 0; /* Removes any extra space */
+  
+}
+
+
+
+
+
+
+/* Keyframe for Icon Buttons */
+/* Keyframe for Icon Buttons */
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(10px); /* Moves down slightly to create a looping effect */
+  }
+}
+
+.icon-buttons a {
+  animation: fade-in 5s ease-in-out infinite; /* Infinite loop */
+}
+
+.icon-buttons a:nth-child(1) {
+  animation-delay: 0.5s;
+}
+.icon-buttons a:nth-child(2) {
+  animation-delay: 1s;
+}
+.icon-buttons a:nth-child(3) {
+  animation-delay: 1.5s;
+}
+.icon-buttons a:nth-child(4) {
+  animation-delay: 2s;
+}
+.icon-buttons a:nth-child(5) {
+  animation-delay: 2.5s;
+}
+
+.say-hello-btn{
+  text-decoration: none;
+}
+
+
+
+/* Typing Animation */
+@keyframes typing {
+  0% {
+    width: 0;
+  }
+  50% {
+    width: 100%;
+  }
+  100% {
+    width: 0;
+  }
+}
+
+/* Blinking Cursor Animation */
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+/* Typing Effect Styling */
+#scrolling-text {
+  font-size: 2.5rem; /* Adjust font size as needed */
+  font-weight: bold;
+  white-space: nowrap; /* Prevent wrapping */
+  overflow: hidden; /* Hide extra text */
+  display: inline-block; /* Make it inline */
+  border-right: 4px solid #fff; /* Simulate a cursor */
+  color: #fcfcff; /* Text color */
+  animation: typing 6s steps(22, end) infinite, blink 0.7s step-end infinite;
+  /* 6s for the typing and deleting animation to loop */
+}
+
+.work-demo-btn {
+  animation: fade-in-out 2s ease-in-out infinite;
+}
+
+@keyframes fade-in-out {
+  0%, 50% {
+    opacity: 1; /* Fully visible while typing */
+  }
+  60%, 100% {
+    opacity: 0; /* Invisible during the deletion phase */
+  }
+}
+
+
+/* Message Box Styling */
+.message-box {
+  position: absolute;
+  
+  background: linear-gradient(90deg, #34254d,#9339cf );
+  color: #0a0a0a;
+  border-radius: 15px;
+  padding: 0px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+ margin-right: 70px;
+}
+
+
+body, html {
+  margin: 0;
+  padding: 0;
+}
+.hidden {
+  display: none;
+}
+
+/* Button inside message box */
+.message-box button {
+  background-color: #0a0a0a;
+  color: #4c1c6c;
+  border: none;
+  padding: 5px 10px;
+  margin-top: 10px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.message-box button:hover {
+  background-color: #0c0c0c;
+}
+
+
+#section2 {
+  background-image: url('https://static.vecteezy.com/system/resources/thumbnails/005/502/394/small_2x/abstract-background-in-concpet-of-metaverse-loop-square-copy-space-purple-and-pink-tone-free-vector.jpg');
+  background-size: cover; 
+  background-position: center; 
+  background-repeat: no-repeat; 
+  display: flex; 
+  flex-direction: column; 
+  align-items: center; 
+  justify-content: center; 
+  color: white; 
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); 
+
+  /* Changed height from 100vh to min-height */
+  min-height: 100vh; /* Ensures it only stretches when necessary */
+  padding: 20px 0; /* Added vertical padding */
+  box-sizing: border-box; /* Ensures padding doesn't affect the actual size */
+}
+
+
+/* Smooth Scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+.scroll-down {
+  display: inline-block;
+  margin-top: 50px;
+  text-decoration: none;
+  color: #2f194a;
+  font-size: 20px;
+  animation: bounce 2s infinite; /* Bounce effect */
+}
+
+/* Bounce Animation */
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(10px);
+  }
+}
+
+
+
+/* Move Down Animation */
+@keyframes move-down {
+  0% {
+    transform: translate(-50%, 0);
+  }
+  50% {
+    transform: translate(-50%, 10px); /* Moves down slightly */
+  }
+  100% {
+    transform: translate(-50%, 0);
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+#targetSection {
+  height: 100vh; /* Full viewport height */
+  background-image: url('https://i.pinimg.com/736x/71/54/47/71544731a0fc8952d59348e3b2c09c70.jpg'); /* Replace with your image path */
+  background-size: cover; /* Ensures the image covers the entire section */
+  background-position: center; /* Centers the image */
+  background-repeat: no-repeat; /* Prevents tiling of the image */
+  display: flex; /* For aligning content */
+  flex-direction: column; /* Stack items vertically */
+  align-items: center; /* Center horizontally */
+  justify-content: center; /* Center vertically */
+  color: #eff7fb; /* Text color to contrast with the background */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Add text shadow for better readability */
+  text-align: center; /* Center-aligns the content */
+  padding: 20px;
+}
+
+
+
+/* Image Gallery */
+.image-gallery {
+  display: flex; /* Arrange images in a row */
+  justify-content: center; /* Center the images */
+  gap: 20px; /* Space between images */
+  margin-top: 20px;
+}
+
+/* Individual Images */
+.gallery-image {
+  width: 300px; /* Set the width of each image */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 10px; /* Optional rounded corners */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Add shadow for a polished look */
+  transition: transform 0.3s; /* Animation effect */
+}
+
+.gallery-image:hover {
+  transform: scale(1.1); /* Slight zoom-in on hover */
+}
+.about-me-section {
+  padding: 40px;
+  background-color: #ab43c0; /* Light background for contrast */
+  border: 2px solid #ddd; /* Subtle border */
+  border-radius: 10px; /* Rounded corners */
+  margin: 20px auto; /* Center align */
+  width: 80%; /* Adjust width as needed */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
+}
+
+.about-me-section h2{
+  color: #611f80;
+}
+.about-me-content p {
+  font-family: 'Banks and Miles', sans-serif; /* Match with your font */
+  font-size: 18px; /* Readable font size */
+  line-height: 1.6; /* Comfortable line spacing */
+  color: #6d6c6c; /* Dark text for readability */
+  margin-bottom: 15px;
+}
+
+.about-me-content strong {
+  color: #611f80; /* Highlighted text color */
+}
+
+
+/* Footer Styles */
+.footer {
+  background: linear-gradient(90deg, #2c1f41,#702a9f,#34254d );
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  position: fixed; /* Use fixed to keep it at the bottom */
+  bottom: -50px; /* Start off-screen */
+  left: 0;
+  width: 100%;
+  transition: bottom 0.5s ease-in-out; /* Smooth transition when it slides up */
+}
+
+/* Keyframe animation for open/close effect */
+@keyframes slide-up {
+  0% {
+    bottom: -50px; /* Start off-screen */
+  }
+  50% {
+    bottom: 0; /* Open the box */
+  }
+  100% {
+    bottom: -50px; /* Close the box */
+  }
+}
+
+/* Trigger the animation on hover */
+.footer:hover {
+  animation: slide-up 10s forwards;
+}
+
+.footer .footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer .footer-content h2 {
+  margin: 10px 0;
+  font-size: 14px;
+}
+
+.footer-social-links {
+  margin-top: 10px;
+}
+
+.footer-social-links a {
+  margin: 0 15px;
+  display: inline-block;
+}
+
+.footer-social-links img {
+  width: 30px;
+  height: 30px;
+  transition: transform 0.3s ease;
+}
+
+.footer-social-links img:hover {
+  transform: scale(1.2);
+}
+
+.button-container,.footer-content h2 {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+
+.footer-button,.footer-content h2 {
+  padding: 10px 20px;
+  font-size: 16px;
+  background: linear-gradient(90deg, #34254d,#64268d );
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.footer-button:hover {
+  background-color: #b300b3;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: nowrap; /* Ensures buttons stay in a single row */
+}
+
+
+
+/* Hide dropdown content initially */
+.dropdown-content {
+  display: none;
+  padding-left: 20px;
+  text-align: left;
+  background: linear-gradient(90deg, #34254d,#220e30 );
+  border-radius: 5px;
+  margin-top: 5px;
+  position: relative;
+  width: 250px; /* Adjust width of the dropdown */
+  
+}
+
+/* Style for close button */
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 20px;
+  background-color: transparent;
+  border: none;
+  color: #514f4f;
+  cursor: pointer;
+}
+
+.close-btn:hover {
+  color: rgb(218, 161, 249);
+}
+
+.dropdown-content ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.dropdown-content li {
+  padding: 5px 0;
+}
+
+
+#targetSection {
+  margin-top: -50px; /* Moves the section 50px upward */
+}
+
+#projects-section {
+  text-align: center;
+  margin: 50px auto;
+  padding: 20px;
+}
+
+h2 {
+  font-size: 2rem;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.project-list {
+  display: flex; /* Use flexbox for horizontal layout */
+  justify-content: center; /* Center align the items */
+  gap: 20px; /* Space between the items */
+}
+
+.project-item {
+  background-color: #2b1f4d; /* Box background color */
+  color: #fff; /* Text color */
+  padding: 20px;
+  border-radius: 10px; /* Optional: Rounded corners */
+  width: 150px; /* Set a fixed width for the boxes */
+  text-align: center; /* Center the text inside the box */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+  transition: transform 0.3s ease; /* Smooth hover effect */
+}
+
+.project-item:hover {
+  transform: translateY(-10px); /* Slight lift on hover */
+  background-color: #4d346d; /* Change background on hover */
+}
+
+
+.project-item {
+  background-color: #635686; /* Box background color */
+  color: #fff; /* Text color */
+  padding: 20px;
+  border-radius: 10px; /* Optional: Rounded corners */
+  width: 150px; /* Set a fixed width for the boxes */
+  text-align: center; /* Center the text inside the box */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+  transition: transform 0.3s ease; /* Smooth hover effect */
+  display: flex; /* Enable flexbox */
+  flex-direction: column; /* Arrange items in a column */
+  justify-content: center; /* Center items vertically */
+  align-items: center; /* Center items horizontally */
+}
+
+.project-item button {
+  background-color: #2b1f4d;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+  margin-top: 10px; /* Add space between the button and other content */
+}
+
+.project-item button:hover {
+  background-color: #4d346d;
+}
+
+
+
+
+/* Style for close button */
+.close-btn {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  background: none;
+  color: #fff;
+  font-size: 20px;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.close-btn:hover {
+  color: #ff5555; /* Highlight the button on hover */
+}
