@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio UI</title>
+  <link rel="stylesheet" href="portf.css">
+  <link href="https://fonts.googleapis.com/css2?family=Banks+and+Miles&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="header">
+    <div class="logo">DIVE <span>IN</span></div>
+    <nav class="navbar">
+      <a href="#">Home</a>
+      <a href="#section2">About Me</a>
+      <a href="https://drive.google.com/file/d/17qo2ae0KY7tMzPdbUZJZovMvsA6afCKP/view" download="Narmadha_CV.pdf" class="navbar">Resume</a>
+      <a href="#targetSection">Certifications</a> 
+      <a href="#projects-section">Projects</a>
+
+    </nav>
+    <button class="hire-me-btn">Hire me</button>
+
+    
+  </header>
+
+
+  
+  
+  <main class="main-section">
+    <div class="content">
+      <h6><p>Narmadha Here</p></h6>
+      <h5><p>Excited - connect, code, and create</p></h5>
+      <h1 id="scrolling-text">IT Graduate & <br> Aspiring Full-Stack Developer</h1>
+
+      
+      
+      
+      
+      <div class="buttons">
+        <button class="say-hello-btn" onclick="showMessageBox()">Say Hello<br>click me</button>
+        <a href="https://drive.google.com/file/d/17qo2ae0KY7tMzPdbUZJZovMvsA6afCKP/view" download="Narmadha_CV.pdf" class="work-demo-btn">VIEW CV</a>
+      </div>
+      <div id="message-box" class="message-box hidden">
+        <p>
+          👋 Hello, Recruiter!
+          Thank you for stopping by!
+          I'm Narmadha, an enthusiastic IT graduate and aspiring full-stack developer. I’m passionate about building user-centric applications, and contribute to impactful projects.
+          
+           Looking to discuss opportunities? Let’s connect and explore how my skills align with your team's vision!
+          
+          [Let's Create Something Amazing Together!]</p>
+        <button onclick="closeMessageBox()">Close</button>
+      </div>
+      
+      
+        
+
+      
+      
+    </div>
+    <div class="image-section">
+      <img src="https://i.pinimg.com/736x/0d/0d/ca/0d0dcab5f2a5ee77487ba0e9b4efbbbc.jpg" alt="Narmadha">
+    </div>
+  </main>
+
+  
+
+  <div class="icon-buttons">
+    <!-- LinkedIn -->
+    <a href="https://www.linkedin.com/in/narmadha-s-b506b3288/" class="icon-button" target="_blank" title="LinkedIn">
+      <img src="https://i.pinimg.com/736x/f9/66/2f/f9662f1ae3d9501c704fd39c8abc9b67.jpg" alt="LinkedIn">
+    </a>
+
+    <!-- GitHub -->
+    <a href="https://github.com/NARMADHA-IT" class="icon-button" target="_blank" title="GitHub">
+      <img src="https://i.pinimg.com/736x/ac/b3/51/acb3513e5a2664ba59bec11222863a40.jpg" alt="GitHub">
+    </a>
+
+        <!-- WhatsApp -->
+    <a href="https://wa.me/9150422633?text=Hello%2C%20I%20would%20like%20to%20connect%20with%20you%21" 
+    class="icon-button" target="_blank" title="WhatsApp">
+    <img src="https://i.pinimg.com/736x/e3/9f/e6/e39fe6612026f54c0b52f7a39213a7ea.jpg" alt="WhatsApp">
+    </a>
+
+
+    <!-- Email -->
+    <a href="mailto:narmadhait24@gmail.com" class="icon-button" title="Email">
+      <img src="https://i.pinimg.com/736x/c6/1a/bf/c61abf661da2950ed4e7191335132fbc.jpg" alt="Email">
+    </a>
+
+    <!-- Phone -->
+    <a href="tel:+9150422633" class="icon-button" title="Phone">
+      <img src="https://i.pinimg.com/736x/84/6d/86/846d86642dbf6a8d4ea0aa6698ad1c93.jpg" alt="phone">
+    </a>
+
+
+    
+    
+
+    
+    
+</div>
+<a href="#section2" class="scroll-down">Scroll Down</a>
+
+<div id="section2" class="about-me-section">
+  <h2>Welcome to About Me</h2>
+  <div class="about-me-content">
+    <p>
+      Hi there! I'm <strong>Narmadha S</strong>, and I’m from the bustling city of Chennai, India. 
+      From a young age, I’ve always been fascinated by the way technology can shape our everyday lives. 
+      This curiosity led me to pursue a career in IT, and today, I’m a proud full-stack developer with 
+      a knack for creating innovative web applications.
+    </p>
+    <p>
+      One of my favorite experiences so far has been working with tools like MySQL, Django, Python, and 
+      various front-end technologies to build projects that truly make a difference. For instance, I recently 
+      developed a food delivery app that simplifies the ordering process for users. Another project close 
+      to my heart is my personal portfolio, where I’ve poured my creativity into showcasing my work and skills.
+    </p>
+    <p>
+      But here’s a fun fact about me—when I’m not coding, I dive into storytelling. I love bringing ideas to 
+      life through animations and exploring how creativity can complement technology. Staying updated with the 
+      latest trends in tech also keeps me energized, as there’s always something new to learn.
+    </p>
+    <p>
+      So, that’s a little about me! If you’re as passionate as I am about turning ideas into impactful solutions, 
+      I’d love to connect and collaborate. <strong>Let’s create something amazing together!</strong>
+    </p>
+  </div>
+</div>
+
+<div id="projects-section">
+  <h2>Projects</h2>
+  <div class="project-list">
+    <!-- Project 1 -->
+    <div class="project-item project-1">
+      <button onclick="toggleDropdown('dropdown-1')">PORTFOLIO</button>
+      <div id="dropdown-1" class="dropdown-content">
+        <span class="close-btn" onclick="toggleDropdown('dropdown-1')">&times;</span>
+        <h3>Portfolio Website (Frontend)</h3>
+        <p>
+          This personal portfolio website highlights my skills, projects, and contact information as an aspiring full-stack developer.
+          Built using HTML, CSS, JavaScript, and Bootstrap, it demonstrates my ability to create responsive, visually appealing, and user-friendly interfaces.
+        </p>
+        <ul>
+          <li>About Me Section: Introduces my background, interests, and career aspirations.</li>
+          <li>Skills Section: A clear and organized display of technical skills and proficiencies.</li>
+          <li>Projects Section: Showcases completed projects with detailed descriptions.</li>
+          <li>Responsive Design: Ensures an optimal viewing experience on all devices using Bootstrap.</li>
+          <li>Interactive Features: Incorporates smooth scrolling, modals, and dynamic elements powered by JavaScript.</li>
+        </ul>
+      </div>
+    </div>
+    
+    <!-- Project 2 -->
+    <div class="project-item project-2">
+      <button onclick="toggleDropdown('dropdown-2')">FOOD DELIVERY APP</button>
+      <div id="dropdown-2" class="dropdown-content">
+        <span class="close-btn" onclick="toggleDropdown('dropdown-2')">&times;</span>
+        <h3>Food Delivery App (Fullstack)</h3>
+        <p>
+          This full-stack web application replicates the functionality of a modern food delivery platform. It seamlessly integrates a responsive frontend 
+          with a robust backend powered by Python (Django) and MySQL for efficient data management.
+        </p>
+        <ul>
+          <li>User Authentication: Secure login and registration for customers.</li>
+          <li>Dynamic Menu Display: View categorized food items with options to sort and search products.</li>
+          <li>Cart & Order Management: Add items to the cart, remove items, and proceed to checkout with ease.</li>
+          <li>Database Integration: Centralized storage and management of user profiles, orders, and delivery addresses using MySQL.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+<div id="targetSection" style="margin-top: 1000px;">
+  <h2>Behind every IT certification is a story of learning, persistence, and growth</h2>
+  <div class="image-gallery">
+    <img src="assets/IBM_CERTIFICATE.png" alt="Image 1" class="gallery-image">
+    <img src="assets/PYFS_CERTIFICATE.jpg" alt="Image 2" class="gallery-image">
+  </div>
+</div>
+
+<footer class="footer">
+  <div class="footer-content">
+    <h2>Unveil</h2>
+    <div class="button-container">
+      <button class="footer-button" onclick="toggleDropdown('professional-skills')">Professional Skills</button>
+      <div id="professional-skills" class="dropdown-content">
+        <button class="close-btn" onclick="closeDropdown('professional-skills')">&times;</button>
+        <ul>
+          <li>Adaptability</li>
+          <li>Team Collaboration</li>
+          <li>Creativity</li>
+          <li>Resilience</li>
+        </ul>
+      </div>
+
+      <button class="footer-button" onclick="toggleDropdown('technical-skills')">Technical Skills</button>
+      <div id="technical-skills" class="dropdown-content">
+        <button class="close-btn" onclick="closeDropdown('technical-skills')">&times;</button>
+        <ul>
+          <li>Frontend Development: HTML, CSS, JavaScript, Bootstrap</li>
+          <li>Backend Development: Python, Django</li>
+          <li>Database Management: MySQL</li>
+        </ul>
+      </div>
+
+      <button class="footer-button" onclick="toggleDropdown('experience')">Experience</button>
+      <div id="experience" class="dropdown-content">
+        <button class="close-btn" onclick="closeDropdown('experience')">&times;</button>
+        <ul>
+          <li>Internship Student<br>Fresa Technologies– Chennai, India<br>August 2023– September 2023</li>
+          <li>• Gained comprehensive insights into company operations and structure.</li>
+          <li>• Produced an organized, professional PDF report summarizing company details and my learnings, showcasing analytical and documentation skills.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+
+
+  <script src="portf.js"></script>
+</body>
+</html>
+
